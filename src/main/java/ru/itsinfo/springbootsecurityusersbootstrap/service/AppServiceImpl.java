@@ -22,6 +22,8 @@ import javax.persistence.PersistenceException;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
+
+//CRUD operations Implement
 @Service
 public class AppServiceImpl implements AppService {
     private final UserRepository userRepository;

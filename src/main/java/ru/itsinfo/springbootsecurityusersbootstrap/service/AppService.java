@@ -10,7 +10,7 @@ import ru.itsinfo.springbootsecurityusersbootstrap.model.User;
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
-
+//CRUD operations
 public interface AppService extends UserDetailsService {
     List<User> findAllUsers();
 
