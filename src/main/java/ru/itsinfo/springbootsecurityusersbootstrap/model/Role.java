@@ -32,7 +32,7 @@ public final class Role extends AbstractEntity<Integer> implements GrantedAuthor
     }
 
     public String getName() {
-        return name;
+        return name.substring(5);
     }
 
     public void setName(String name) {

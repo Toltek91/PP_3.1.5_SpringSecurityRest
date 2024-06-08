@@ -41,7 +41,7 @@ public class AdminController {
     }
 
     @GetMapping("/{id}/profile")
-    public String showUserProfileModal(@PathVariable("id") Long userId, Model model, RedirectAttributes attributes) {
+    public String showUserProfileModal(@PathVariable("id") Long userId, Model model) {
         try {
             model.addAttribute("allRoles", appService.findAllRoles());
             model.addAttribute("user", appService.findUser(userId));

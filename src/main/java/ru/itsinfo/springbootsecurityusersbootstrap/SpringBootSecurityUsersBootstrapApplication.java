@@ -33,20 +33,20 @@ public class SpringBootSecurityUsersBootstrapApplication implements CommandLineR
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args)  {
         Role admin = new Role("ROLE_ADMIN");
         Role user = new Role("ROLE_USER");
         roleRepository.save(admin);
         roleRepository.save(user);
-        roleRepository.save(new Role("ROLE_GUEST"));
+    //    roleRepository.save(new Role("GUEST"));
 
-        userRepository.save(new User("Василий", "Уткин", 49, "admin@mail.com",
+        userRepository.save(new User("Михаил", "Метелица", 33, "admin@mail.com",
                 passwordEncoder.encode("admin"),
                 new HashSet<>() {{
                     add(admin);
                     add(user);
                 }}));
-        userRepository.save(new User("Дмитрий", "Губерниев", 46, "user@mail.com",
+        userRepository.save(new User("Иван", "Иванов", 46, "user@mail.com",
                 passwordEncoder.encode("user"),
                 new HashSet<>() {{
                     add(user);

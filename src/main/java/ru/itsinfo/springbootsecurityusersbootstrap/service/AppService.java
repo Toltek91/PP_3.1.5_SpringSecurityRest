@@ -22,7 +22,6 @@ public interface AppService extends UserDetailsService {
 
     void authenticateOrLogout(Model model, HttpSession session, LoginException authenticationException, String authenticationName);
 
-    //boolean saveUser(User user, BindingResult bindingResult, Model model);
 
     void insertUser(User user, BindingResult bindingResult, RedirectAttributes redirectAttributes);
 
