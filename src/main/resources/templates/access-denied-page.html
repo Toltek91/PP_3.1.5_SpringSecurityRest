@@ -6,10 +6,12 @@
 
 <header th:replace="fragments/header :: header"/>
 
-<div class="container">
-    <h2 class="form-signin-heading">Access denied!</h2>
+<div class="container-fluid d-flex flex-row vh-100 p-0">
+    <div class="tab-content flex-grow-1 bg-light p-3">
+        <h1>Access denied!</h1>
+    </div>
 </div>
 
-<div th:replace="layouts/main :: footer"></div>
+<div th:replace="layouts/main :: footer"/>
 </body>
 </html>
