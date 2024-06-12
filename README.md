@@ -1,7 +1,7 @@
-PP_3.1.5_SpringSecurityRest
-Kata Academy PP/Практическая задача 3.1.5 Rest controllers
+##PP_3.1.5_SpringSecurityRest
+##Kata Academy PP/Практическая задача 3.1.5 Rest controllers
 
-Практическая задача Задание:
+#Практическая задача Задание:
 
 Написать Rest-контроллеры для вашего приложения.
 Переписать вывод (заполнение) таблицы, модальных окон и т.д. на JS c помощью Fetch API, допускается использование JQuery.
